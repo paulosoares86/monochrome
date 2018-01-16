@@ -26,8 +26,9 @@
         }
 
         &:disabled {
-            background: desaturate($base, 50);
+            background: $gray;
             color: $white;
+            cursor: not-allowed;
         }
     }
 
