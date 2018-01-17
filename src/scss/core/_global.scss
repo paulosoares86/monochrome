@@ -5,3 +5,8 @@
 html {
     font-family: $font-family-text;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
