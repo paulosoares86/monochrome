@@ -1,7 +1,8 @@
 // Colors
 
 $base: #0e60a3;
-$gray: #c2c2c2;
+$gray: #f3f3f3;
+
 $white: #fff;
 
 
@@ -13,3 +14,11 @@ $font-family-text: 'Avenir', 'Open Sans', sans-serif;
 // Grid
 
 $wrapper-width: 960px;
+$grid-columns: 12;
+$gutter-width: 32px;
+$outer-margin: 16px;
+
+$breakpoints:
+  sm 320px 288px,
+  md 768px 736px,
+  lg 1152px 960px;
