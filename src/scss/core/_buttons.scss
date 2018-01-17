@@ -27,7 +27,7 @@
 
         &:disabled {
             background: $gray;
-            color: $white;
+            color: darken($gray, 50);
             cursor: not-allowed;
         }
     }
@@ -48,7 +48,7 @@
 
         &:disabled {
             background: $gray;
-            color: $white;
+            color: darken($gray, 50);
             border: 0;
             cursor: not-allowed;
         }
