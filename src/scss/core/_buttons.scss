@@ -12,7 +12,7 @@
         cursor: default;
     }
 
-    &.btn-primary {
+    &.btn-default {
         background: $base;
         color: $white;
 
@@ -32,7 +32,7 @@
         }
     }
 
-    &.btn-secondary {
+    &.btn-outline {
         background: $white;
         color: $base;
         border: 1px solid $base;
