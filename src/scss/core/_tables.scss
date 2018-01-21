@@ -1,0 +1,22 @@
+table {
+    border-spacing: 0;
+	width: 100%;
+}
+
+thead {
+	color: $base;
+}
+
+td, th {
+	border-bottom: 1px solid $base;
+	padding: 1rem 1rem;
+	text-align: left;
+
+	&:first-child {
+		padding-left: 0
+	}
+
+	&:last-child {
+		padding-right: 0
+	}
+}
