@@ -38,7 +38,7 @@
         border: 1px solid $base;
 
         &:hover {
-            background: darken($base, 10);
+            background: $base;
             color: $white;
         }
 
