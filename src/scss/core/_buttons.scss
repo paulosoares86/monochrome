@@ -9,7 +9,7 @@
     cursor: pointer;
 
     &:disabled {
-        cursor: default;
+        cursor: not-allowed;
     }
 
     &.btn-default {
@@ -28,7 +28,6 @@
         &:disabled {
             background: $gray;
             color: darken($gray, 50);
-            cursor: not-allowed;
         }
     }
 
@@ -50,7 +49,6 @@
             background: $gray;
             color: darken($gray, 50);
             border: 0;
-            cursor: not-allowed;
         }
     }
 
