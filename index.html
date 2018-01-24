@@ -10,9 +10,6 @@
             .hero {
                 margin: 0;
                 padding: 100px 0px;
-                text-align: center;
-                background: #1267FA;
-                color: #fff;
             }
             .title {
                 text-transform: uppercase;
@@ -32,7 +29,7 @@
         </style>
     </head>
     <body>
-        <h1 class="hero">Monochrome CSS framework</h1>
+        <h1 class="hero bg-base color-white ta-center">Monochrome CSS framework</h1>
         <div class="wrapper container-fluid">
             <section>
                 <h3 class="title">Grid</h3>
@@ -119,12 +116,28 @@
                 </table>
             </section>
             <section>
+                <h3 class="title">LISTS</h3>
+
+            </section>
+            <section>
                 <h3 class="title">FORMS</h3>
                 <form>
                     <div class="row">
                         <div class="col-xs">
                             <label for="email">Email</label>
                             <input type="email" placeholder="email@domain.com" id="email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs">
+                            <p>
+                                <input type="radio" id="radio01" name="radio" />
+                                <label for="radio01"> Radio Button 1</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="radio02" name="radio" />
+                                <label for="radio02"> Radio Button 2</label>
+                            </p>
                         </div>
                     </div>
                     <label for="message">Message</label>
