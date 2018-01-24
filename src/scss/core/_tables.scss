@@ -20,3 +20,9 @@ td, th {
 		padding-right: 0
 	}
 }
+
+tr {
+	&:hover {
+        color: $base;
+    }
+}
