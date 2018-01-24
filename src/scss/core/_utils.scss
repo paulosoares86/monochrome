@@ -2,6 +2,10 @@
     background: $base;
 }
 
+.bg-base-light {
+    background: lighten($base, 43);
+}
+
 .bg-gray {
     background: $gray;
 }
