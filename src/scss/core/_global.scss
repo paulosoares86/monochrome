@@ -1,20 +1,22 @@
-* {
-    outline: none;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 html {
-    font-family: $font-family-text;
-    color: $font-color;
+    font-size: 62.5%;
 }
 
 html, body {
+    font-family: $font-family-text;
+    color: $font-color;
     margin: 0;
     padding: 0;
 }
 
 body {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+    font-size: 1.4rem;
 }
 
 img, svg {
