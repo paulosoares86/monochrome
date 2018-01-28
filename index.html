@@ -9,16 +9,16 @@
         <style>
             .hero {
                 margin: 0;
-                padding: 100px 0px;
+                padding: 50px 0px;
             }
             .title {
                 text-transform: uppercase;
+                letter-spacing: 0.1rem;
             }
             .row {
                 margin-bottom: 10px;
             }
             .grid-block {
-                /* background: #1267fa17; */
                 text-align: center;
                 padding: 8px;
             }
@@ -29,10 +29,13 @@
         </style>
     </head>
     <body>
-        <h1 class="hero bg-base color-white ta-center">Monochrome CSS framework</h1>
         <div class="wrapper container-fluid">
+            <section class="hero">
+                <h1 class="color-base ta-center">Monochrome CSS framework</h1>
+            </section>
+            <hr>
             <section>
-                <h3 class="title">Grid</h3>
+                <h4 class="title">Grid</h4>
                 <div class="row">
                     <div class="col-xs">
                         <div class="grid-block bg-base-light">12</div>
@@ -59,7 +62,10 @@
                 </div>
             </section>
             <section>
-                <h3 class="title">Typography</h3>
+                <h4 class="title">Typography</h4>
+                <p>
+                    We're using Snook's technique here: Using 62.5% for font-size in html tag and using rem for heading's font-size.
+                </p>
                 <div class="row">
                     <div class="col-xs">
                         <h1>Heading 1</h1>
@@ -76,20 +82,18 @@
                 </div>
             </section>
             <section>
-                <h3 class="title">Buttons</h3>
+                <h4 class="title">Buttons</h4>
                 <p>
-                    <button class="btn">Clear</button>
                     <button class="btn btn-default">Default</button>
                     <button class="btn btn-outline">Outline</button>
                 </p>
                 <p>
-                    <button class="btn" disabled>Clear (disabled)</button>
                     <button class="btn btn-default" disabled>Default (disabled)</button>
                     <button class="btn btn-outline" disabled>Outline (disabled)</button>
                 </p>
             </section>
             <section>
-                <h3 class="title">TABLES</h3>
+                <h4 class="title">TABLES</h4>
                 <table>
                     <thead>
                         <tr>
@@ -116,11 +120,11 @@
                 </table>
             </section>
             <section>
-                <h3 class="title">LISTS</h3>
+                <h4 class="title">LISTS</h4>
 
             </section>
             <section>
-                <h3 class="title">FORMS</h3>
+                <h4 class="title">FORMS</h4>
                 <form>
                     <div class="row">
                         <div class="col-xs">
