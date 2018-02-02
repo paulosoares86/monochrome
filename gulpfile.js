@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
+let cleanCSS = require('gulp-clean-css');
 
 var input = './src/scss/**/*.scss';
 var output = './dist';
@@ -15,6 +16,15 @@ var sassOptions = {
 var autoprefixerOptions = {
     browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
 };
+
+gulp.task('minify', () => {
+    return gulp.src('./dist/monochrome.css')
+        .pipe(cleanCSS({ debug: true }, (details) => {
+            console.log(`${details.name}: ${details.stats.originalSize}`);
+            console.log(`${details.name}: ${details.stats.minifiedSize}`);
+        }))
+        .pipe(gulp.dest(output));
+});
 
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
