@@ -8,20 +8,21 @@ input[type='url'],
 input:not([type]),
 textarea,
 select {
+	outline: none;
 	background-color: $white;
 	border: 1px solid $gray;
 	box-sizing: border-box;
-	padding: 16px;
 	line-height: 1;
 	width: 100%;
-	max-height: 48px;
-	margin-top: 8px;
+	height: 4.8rem;
+	padding: 1.6rem;
+	margin: 0.8rem 0;
 	background-image: none;
-	font-size: 12px;
+	font-size: 1.2rem;
 
 	&:focus {
 		border: 2px solid $base;
-		padding: 15px;
+		padding: 1.5rem;
 		caret-color: $base;
 	}
 
@@ -37,20 +38,17 @@ select {
 }
 
 textarea {
-	min-height: 6.5rem;
+	min-height: 7.2rem;
+	padding: 1.6rem 1.6rem;
 }
 
 label, legend {
 	display: block;
-	font-size: 14px;
-	line-height: 16px;
-	height: 16px;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	height: 1.6rem;
 	text-align: left;
-}
-
-input[type='checkbox'],
-input[type='radio'] {
-	display: inline;
+	font-weight: 700;
 }
 
 .label-inline {
