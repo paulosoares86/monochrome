@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="./dist/app.css">
+        <link rel="stylesheet" href="./dist/monochrome.css">
         <title>Monochrome</title>
         <style>
             .hero {
@@ -33,9 +33,33 @@
             <section class="hero">
                 <h1 class="color-base ta-center">Monochrome CSS framework</h1>
             </section>
-            <hr>
+            <section>
+                <h4 class="title">Typography</h4>
+                <p>
+                    We're using <a href="https://snook.ca/archives/html_and_css/font-size-with-rem">Snook's</a> technique here: Using 62.5% for font-size for html tag and <i>rem</i> for heading's font-size. The majority of browsers have 16px as default for the root font-size, so 62.5% results in 10px, and 1rem = 10px.
+                    <br>
+                    The font used in monochrome is <i>Nunito</i>
+                </p>
+                <div class="row">
+                    <div class="col-xs">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                    </div>
+                    <div class="col-xs">
+                        <p>p</p>
+                        <a href="">a</a>
+                    </div>
+                </div>
+            </section>
             <section>
                 <h4 class="title">Grid</h4>
+                <p>
+                    Grid is the foundation of a great layout for any website.
+                </p>
                 <div class="row">
                     <div class="col-xs">
                         <div class="grid-block bg-base-light">12</div>
@@ -62,27 +86,10 @@
                 </div>
             </section>
             <section>
-                <h4 class="title">Typography</h4>
-                <p>
-                    We're using Snook's technique here: Using 62.5% for font-size in html tag and using rem for heading's font-size.
-                </p>
-                <div class="row">
-                    <div class="col-xs">
-                        <h1>Heading 1</h1>
-                        <h2>Heading 2</h2>
-                        <h3>Heading 3</h3>
-                        <h4>Heading 4</h4>
-                        <h5>Heading 5</h5>
-                        <h6>Heading 6</h6>
-                    </div>
-                    <div class="col-xs">
-                        <p>p</p>
-                        <a href="">a</a>
-                    </div>
-                </div>
-            </section>
-            <section>
                 <h4 class="title">Buttons</h4>
+                <p>
+                    Monochrome has 2 simple buttons: default and outline. It's also possible to customize a new button using the btn class as a base.
+                </p>
                 <p>
                     <button class="btn btn-default">Default</button>
                     <button class="btn btn-outline">Outline</button>
@@ -94,6 +101,7 @@
             </section>
             <section>
                 <h4 class="title">TABLES</h4>
+                <p>The simple way to use a table in monochrome is using the HTML5's table specification...</p>
                 <table>
                     <thead>
                         <tr>
@@ -121,7 +129,26 @@
             </section>
             <section>
                 <h4 class="title">LISTS</h4>
-
+                <div class="row">
+                    <div class="col-xs">
+                        <ul>
+                            <li>Javascript</li>
+                            <li>Typescript</li>
+                            <li>Elm</li>
+                            <li>Haskell</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <ol>
+                            <li>Javascript</li>
+                            <li>Typescript</li>
+                            <li>Elm</li>
+                            <li>Haskell</li>
+                            <li>Python</li>
+                        </ol>
+                    </div>
+                </div>
             </section>
             <section>
                 <h4 class="title">FORMS</h4>
@@ -132,23 +159,54 @@
                             <input type="email" placeholder="email@domain.com" id="email">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs">
-                            <p>
-                                <input type="radio" id="radio01" name="radio" />
-                                <label for="radio01"> Radio Button 1</label>
-                            </p>
-                            <p>
-                                <input type="radio" id="radio02" name="radio" />
-                                <label for="radio02"> Radio Button 2</label>
-                            </p>
-                        </div>
-                    </div>
                     <label for="message">Message</label>
                     <textarea placeholder="Hello World" id="message"></textarea>
                     <input class="btn btn-default" type="submit" value="Submit">
                 </form>
             </section>
+            <section>
+                <h6 class="ta-center">Created by Leonardo Borges (lborgav). MIT License</h6>
+            </section>
+            <!-- Github corner -->
+            <a href="https://your-url" class="github-corner" aria-label="View source on Github">
+                <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
+                    aria-hidden="true">
+                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                    <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                    <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                        fill="currentColor" class="octo-body"></path>
+                </svg>
+            </a>
+            <style>
+                .github-corner:hover .octo-arm {
+                    animation: octocat-wave 560ms ease-in-out
+                }
+
+                @keyframes octocat-wave {
+                    0%,
+                    100% {
+                        transform: rotate(0)
+                    }
+                    20%,
+                    60% {
+                        transform: rotate(-25deg)
+                    }
+                    40%,
+                    80% {
+                        transform: rotate(10deg)
+                    }
+                }
+
+                @media (max-width:500px) {
+                    .github-corner:hover .octo-arm {
+                        animation: none
+                    }
+                    .github-corner .octo-arm {
+                        animation: octocat-wave 560ms ease-in-out
+                    }
+                }
+            </style>
         </div>
     </body>
 </html>
