@@ -8,8 +8,7 @@
         <title>Monochrome</title>
         <style>
             .hero {
-                margin: 0;
-                padding: 50px 0px;
+                margin: 4rem 0;
             }
             .title {
                 text-transform: uppercase;
@@ -26,19 +25,33 @@
                 margin-top: 50px;
                 margin-bottom: 50px;
             }
+            footer {
+                margin-top: 10rem;
+            }
         </style>
     </head>
     <body>
         <div class="wrapper container-fluid">
             <section class="hero">
-                <h1 class="color-base ta-center">Monochrome CSS framework</h1>
+                <h1 class="ta-center color-base box-base">
+                    Monochrome CSS framework
+                </h1>
+            </section>
+            <section>
+                <h4 class="title">Usage</h4>
+                <p>Link the following css in your page:</p>
+                <pre>
+                    <code>
+&lt;link rel="stylesheet" href="https://raw.githubusercontent.com/lborgav/monochrome/master/dist/monochrome.scss"&gt;
+                    </code>
+                </pre>
             </section>
             <section>
                 <h4 class="title">Typography</h4>
                 <p>
                     We're using <a href="https://snook.ca/archives/html_and_css/font-size-with-rem">Snook's</a> technique here: Using 62.5% for font-size for html tag and <i>rem</i> for heading's font-size. The majority of browsers have 16px as default for the root font-size, so 62.5% results in 10px, and 1rem = 10px.
                     <br>
-                    The font used in monochrome is <i>Nunito</i>
+                    The font used in monochrome is <a href="https://fonts.google.com/specimen/Nunito">Nunito</a>
                 </p>
                 <div class="row">
                     <div class="col-xs">
@@ -50,8 +63,8 @@
                         <h6>Heading 6</h6>
                     </div>
                     <div class="col-xs">
-                        <p>p</p>
-                        <a href="">a</a>
+                        <p>This is a paragraph</p>
+                        <a href="">This is an anchor tag</a>
                     </div>
                 </div>
             </section>
@@ -84,6 +97,41 @@
                         <div class="grid-block bg-base-light">4</div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-xs">
+                        <pre>
+                            <code>
+&lt;div class="container"&gt;
+
+  &lt;!-- columns should be the immediate child of a .row --&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="one column"&gt;One&lt;/div&gt;
+    &lt;div class="eleven columns"&gt;Eleven&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- just use a number and class 'column' or 'columns' --&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="two columns"&gt;Two&lt;/div&gt;
+    &lt;div class="ten columns"&gt;Ten&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- there are a few shorthand columns widths as well --&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="one-third column"&gt;1/3&lt;/div&gt;
+    &lt;div class="two-thirds column"&gt;2/3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="one-half column"&gt;1/2&lt;/div&gt;
+    &lt;div class="one-half column"&gt;1/2&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) --&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
             </section>
             <section>
                 <h4 class="title">Buttons</h4>
@@ -92,40 +140,71 @@
                 </p>
                 <p>
                     <button class="btn btn-default">Default</button>
-                    <button class="btn btn-outline">Outline</button>
+                    <button class="btn btn-default" disabled>Default (disabled)</button>
                 </p>
                 <p>
-                    <button class="btn btn-default" disabled>Default (disabled)</button>
+                    <pre>
+                        <code>
+&lt;button class="btn btn-default"&gt;Default&lt;/button&gt;
+&lt;button class="btn btn-default" disabled&gt;Default (disabled)&lt;/button&gt;
+                        </code>
+                    </pre>
+                </p>
+                <p>
+                    <button class="btn btn-outline">Outline</button>
                     <button class="btn btn-outline" disabled>Outline (disabled)</button>
+                </p>
+                <p>
+                    <pre>
+                        <code>
+&lt;button class="btn btn-outline&gt;Outline&lt;/button&gt;
+&lt;button class="btn btn-outline" disabled&gt;Outline (disabled)&lt;/button&gt;
+                        </code>
+                    </pre>
                 </p>
             </section>
             <section>
                 <h4 class="title">TABLES</h4>
                 <p>The simple way to use a table in monochrome is using the HTML5's table specification...</p>
-                <table>
+                <table class="table">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Age</th>
-                            <th>Height</th>
-                            <th>Location</th>
+                            <th>Language</th>
+                            <th>Year</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Stephen Curry</td>
-                            <td>27</td>
-                            <td>1,91</td>
-                            <td>Akron, OH</td>
+                            <td>Python</td>
+                            <td>1994</td>
                         </tr>
                         <tr>
-                            <td>Klay Thompson</td>
-                            <td>25</td>
-                            <td>2,01</td>
-                            <td>Los Angeles, CA</td>
+                            <td>Ruby</td>
+                            <td>1993</td>
                         </tr>
                     </tbody>
                 </table>
+                <p>
+                    <pre>
+                        <code>
+&lt;table class="table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Language&lt;/th&gt;
+      &lt;th&gt;Year&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Language&lt;/td&gt;
+      &lt;td&gt;Year&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+                        </code>
+                    </pre>
+                </p>
             </section>
             <section>
                 <h4 class="title">LISTS</h4>
@@ -149,6 +228,20 @@
                         </ol>
                     </div>
                 </div>
+                <p>
+                    <pre>
+                        <code>
+&lt;!-- For ordered list, use ol instead of ul --&gt;
+&lt;ul&gt;
+    &lt;li&gt;Javascript&lt;/li&gt;
+    &lt;li&gt;Typescript&lt;/li&gt;
+    &lt;li&gt;Elm&lt;/li&gt;
+    &lt;li&gt;Haskell&lt;/li&gt;
+    &lt;li&gt;Python&lt;/li&gt;
+&lt;/ul&gt;
+                        </code>
+                    </pre>
+                </p>
             </section>
             <section>
                 <h4 class="title">FORMS</h4>
@@ -163,12 +256,29 @@
                     <textarea placeholder="Hello World" id="message"></textarea>
                     <input class="btn btn-default" type="submit" value="Submit">
                 </form>
+                <p>
+                    <pre>
+                        <code>
+&lt;form&gt;
+     &lt;div class="row"&gt;
+         &lt;div class="col-xs"&gt;
+            &lt;label for="email"&gt;Email&lt;/label&gt;
+            &lt;input type="email" placeholder="email@domain.com" id="email"&gt;
+         &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;label for="message"&gt;Message&lt;/label&gt;
+     &lt;textarea placeholder="Hello World" id="message"&gt;&lt;/textarea&gt;
+     &lt;input class="btn btn-default" type="submit" value="Submit"&gt;
+&lt;/form&gt;
+                        </code>
+                    </pre>
+                </p>
             </section>
-            <section>
-                <h6 class="ta-center">Created by Leonardo Borges (lborgav). MIT License</h6>
-            </section>
+            <footer>
+                <h6 class="ta-center">Created by Leonardo Borges - <a href="http://lborgav.com">lborgav</a>. MIT License</h6>
+            </footer>
             <!-- Github corner -->
-            <a href="https://your-url" class="github-corner" aria-label="View source on Github">
+            <a href="https://github.com/lborgav/monochrome" class="github-corner" aria-label="View source on Github">
                 <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
                     aria-hidden="true">
                     <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
